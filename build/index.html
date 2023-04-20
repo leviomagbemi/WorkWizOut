@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/edec7f25e3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="asset/style.css" />
+    <title>WorkOutWiz</title>
+  <script defer src="app.bundle.js"></script></head>
+  <body>
+    <div class="container" id="output-container-abs"></div>
+    <div class="container" id="output-container-chest"></div>
+    <div class="container" id="output-container-arm"></div>
+    <div class="container" id="output-container-leg"></div>
+    <div class="container" id="output-container-sb"></div>
+
+    <div class="container" id="output-container">
+      <h1 class="text-center bg-primary p-3 text-light mb-3" id="heading">
+        WorkOutWiz <i class="fas fa-dumbbell fa-lg"></i>
+      </h1>
+
+      <!--row start-->
+      <div class="row">
+        <div class="col-lg-4 text-white mb-3 workout" id="fullbody-workout">
+          <img
+            src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+            alt=""
+            class="card-img"
+          />
+          <div class="container card-img-overlay">
+            <h4 class="card-title">Full Body Workout</h4>
+            <p class="card-text text-center font-weight-bold">
+              This is a full body exercise
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 text-white mb-3 workout" id="abs-workout">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1661373316711-d24b9a43bf20?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzQwfHxhYmRvbWluYWwlMjBtdXNjbGV8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60"
+            alt=""
+            class="card-img"
+          />
+          <div class="container card-img-overlay">
+            <h4 class="card-title">Abs Workout</h4>
+            <p class="card-text text-center font-weight-bold">
+              This is an exercise for abs only
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 text-white mb-3 workout" id="chest-workout">
+          <img
+            src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+            alt=""
+            class="card-img"
+          />
+          <div class="container card-img-overlay">
+            <h4 class="card-title">Chest Workout</h4>
+            <p class="card-text text-center font-weight-bold">
+              This is an exercise for chest only
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 text-white mb-3 workout" id="arm-workout">
+          <img
+            src="https://images.unsplash.com/photo-1600677396439-fa707a38d570?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80"
+            alt=""
+            class="card-img"
+          />
+          <div class="container card-img-overlay">
+            <h4 class="card-title">Arm Workout</h4>
+            <p class="card-text text-center font-weight-bold">
+              This is an exercise for arm only
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 text-white mb-3 workout" id="leg-workout">
+          <img
+            src="https://images.unsplash.com/photo-1437011322766-da2f39ff123b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+            alt=""
+            class="card-img"
+          />
+          <div class="container card-img-overlay">
+            <h4 class="card-title">Leg Workout</h4>
+            <p class="card-text text-center font-weight-bold">
+              This is an exercise for leg only
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 text-white mb-3 workout" id="shoulderback-workout">
+          <img
+            src="https://images.unsplash.com/photo-1605296867424-35fc25c9212a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+            alt=""
+            class="card-img"
+          />
+          <div class="container card-img-overlay">
+            <h4 class="card-title">Shoulder & Back Workout</h4>
+            <p class="card-text text-center font-weight-bold">
+              This is an exercise for shoulder and back only
+            </p>
+          </div>
+        </div>
+
+        <!--row end-->
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./build/app.bundle.js"></script>
+  </body>
+</html>
